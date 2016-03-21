@@ -1,0 +1,157 @@
+html, body {
+  font-size: 28px;
+  color: #7c7c7c;
+}
+@media (max-width: 425px) {
+  html, body {
+    font-size: 6.5vw;
+  }
+}
+
+.toggle-buttons {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .toggle-buttons {
+    position: absolute;
+    right: 5px;
+    top:   5px;
+    margin: none;
+    width: auto;
+  }
+}
+.toggle-buttons button {
+  margin-left:  0.1em;
+  margin-right: 0.1em;
+  display: flex;
+  font-size: 0.6em;
+  width:  6em;
+  height: 2.5em;
+  border: none;
+  background-color: #E4E4E4;
+  align-items:     center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+@media (min-width: 1024px) {
+  .toggle-buttons button {
+    font-size: 0.7em;
+    height: 3.5em;
+  }
+}
+.toggle-buttons button:hover {
+  background-color: #C6E0F7;
+}
+
+.toggle-buttons .translation-toggle {
+  font-family: 'Roboto', sans-serif;
+  color: #E8BB1A;
+}
+.hide-translation .translation-toggle {
+  text-decoration: line-through;
+  color: #ABABAB;
+}
+
+.hide-person .person-toggle {
+  text-decoration: line-through;
+  color: #ABABAB;
+}
+.hide-person .person-toggle .person-icon {
+  opacity: 0.6;
+}
+.person-icon {
+  display: inline-block;
+  background-image: url("icons/person-icon.svg");
+  background-size: contain;
+  width:  1.5em;
+  height: 1.5em;
+}
+
+.hide-context .context-toggle {
+  text-decoration: line-through;
+  color: #ABABAB;
+}
+.hide-context .context-toggle .context-icon {
+  opacity: 0.6;
+}
+.context-icon {
+  display: inline-block;
+  background-image: url("icons/context-icon.svg");
+  background-size: contain;
+  width:  1.5em;
+  height: 1.5em;
+}
+
+.french {
+  font-family: 'Merriweather', serif;
+}
+
+.subject {
+  color: #e36363;
+}
+
+.translation {
+  font-family: 'Roboto', sans-serif;
+  color: #E8BB1A;
+  font-size: 0.5em;
+}
+.hide-translation .translation {
+  display: none;
+}
+
+h1 {
+  font-weight: normal;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  margin-top:    0.5em;
+  margin-bottom: 0.3em;
+}
+
+table {
+  border-spacing: 0.8em 0.2em;
+}
+
+.single-row > td {
+  padding-top:    0.5em;
+  padding-bottom: 0.5em;
+}
+
+.row-group-start > td {
+  padding-top:    0.5em;
+}
+.row-group-end > td {
+  padding-bottom: 0.5em;
+}
+
+table {
+  max-width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.person-cell {
+  text-align: right;
+}
+.hide-person .person-cell {
+  display: none;
+}
+.person-cell img {
+  height: 1.8em;
+}
+
+.context-cell {
+  text-align: center;
+}
+.hide-context .context-cell {
+  display: none;
+}
+.context-cell img {
+  height: 1.2em;
+}

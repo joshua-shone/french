@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    
+    <title>Être</title>
+    
+    <link rel="icon" href="favicon.png">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto'       rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+  
+    <h1>
+      <span class="french subject">Être</span>
+      <span class="translation">to be</span>
+    </h1>
+    
+    <div class="toggle-buttons">
+      <button class="translation-toggle" onclick="document.body.classList.toggle('hide-translation')">
+        <span>translation</span>
+      </button>
+      <button class="person-toggle" onclick="document.body.classList.toggle('hide-person')">
+        <span class="person-icon"></span>
+        <span>person</span>
+      </button>
+      <button class="context-toggle" onclick="document.body.classList.toggle('hide-context')">
+        <span class="context-icon"></span>
+        <span>context</span>
+      </button>
+    </div>
+    
+    <table>
+      <tbody>
+      
+        <tr class="single-row">
+          <td class="person-cell">
+            <img src="icons/first-person-icon.svg">
+            <div class="translation">first-person</div>
+          </td>
+          <td class="context-cell"></td>
+          <td>
+            <div class="french">Je <span class="subject">suis</span></div>
+            <div class="translation">I am</div>
+          </td>
+        </tr>
+        
+        <tr class="single-row">
+          <td class="person-cell">
+            <img src="icons/second-person-icon.svg">
+            <div class="translation">second-person</div>
+          </td>
+          <td class="context-cell"></td>
+          <td>
+            <div class="french">Tu <span class="subject">es</span></div>
+            <div class="translation">You are</div>
+          </td>
+        </tr>
+        
+        <tr class="single-row">
+          <td class="person-cell">
+            <img src="icons/third-person-icon.svg">
+            <div class="translation">third-person</div>
+          </td>
+          <td class="context-cell"></td>
+          <td>
+            <div class="french">Il/elle <span class="subject">est</span></div>
+            <div class="translation">He/she is</div>
+          </td>
+        </tr>
+        
+        <tr class="row-group-start">
+          <td class="person-cell" rowspan="2">
+            <img src="icons/we-icon.svg">
+            <div class="translation">we</div>
+          </td>
+          <td class="context-cell">
+            <img src="icons/spoken-icon.svg">
+            <div class="translation">spoken</div>
+          </td>
+          <td>
+            <div class="french">On <span class="subject">est</span></div>
+            <div class="translation">We are</div>
+          </td>
+        </tr>
+        <tr class="row-group-end">
+          <td class="context-cell">
+            <img src="icons/written-icon.svg">
+            <div class="translation">written</div>
+          </td>
+          <td>
+            <div class="french">Nous <span class="subject">sommes</span></div>
+            <div class="translation">We are</div>
+          </td>
+        </tr>
+        
+        <tr class="row-group-start">
+          <td class="person-cell">
+            <img src="icons/second-person-icon.svg">
+            <div class="translation">second-person</div>
+          </td>
+          <td class="context-cell">
+            <img src="icons/formal-icon.svg">
+            <div class="translation">formal</div>
+          </td>
+          <td rowspan="2">
+            <div class="french">Vous <span class="subject">êtes</span></div>
+            <div class="translation">You are</div>
+            <div class="translation">You are all</div>
+          </td>
+        </tr>
+        <tr class="row-group-end">
+          <td class="person-cell">
+            <img src="icons/second-person-plural-icon.svg">
+            <div class="translation">
+              <div>second-person</div>
+              <div>plural</div>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr class="single-row">
+          <td class="person-cell">
+            <img src="icons/third-person-plural-icon.svg">
+            <div class="translation">
+              <div>third-person</div>
+              <div>plural</div>
+            </div>
+          </td>
+          <td class="context-cell"></td>
+          <td>
+            <div class="french">Ils/elles <span class="subject">sont</span></div>
+            <div class="translation">They are</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
