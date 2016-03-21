@@ -146,4 +146,17 @@
       </tbody>
     </table>
   </body>
+  <script>
+    var buttons = document.querySelectorAll('button');
+    for (var i=0; i<buttons.length; i++) {
+      var button = buttons[i];
+      (function(button) {
+        button.addEventListener('touchstart', function(event) {
+          event.preventDefault();
+          button.onclick.apply(button);
+          return false;
+        });
+      })(button);
+    }
+  </script>
 </html>
